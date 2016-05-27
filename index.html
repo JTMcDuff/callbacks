@@ -1,0 +1,40 @@
+<DOCTYPE HTML>
+<html>
+
+<body>
+
+<script>
+
+//modifyArr accepts an array arr and returns the array as a string.
+//Also accepts a function func that is appended to each line.
+function modifyArr (arr,func){
+var str1=arr[0]; 
+if (func) {
+for (var i=1; i<arr.length; i++){
+str1=str1.concat(arr[i]);
+str1=str1.concat(func)+" ";
+}
+return str1;
+}
+else {return arr};
+}
+
+//function billy returns the string "Billy."
+function billy (){
+return "Billy";
+}
+
+//function bob returns the string"Bob."
+function bob(){
+return "Bob";
+}
+
+//map appears to be a function that accepts a callback and then operates the callback on each argument.
+//In the provided example, the first invocation will add 1 to each value and return it.
+//In the second example, all the numbers will be multipled by 2, then returned.
+
+</script>
+
+</body>
+
+</html>
